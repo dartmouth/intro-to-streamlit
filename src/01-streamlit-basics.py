@@ -1,5 +1,6 @@
 import streamlit as st
 
+from my_components import footer
 
 def say_hi(name, emoji):
     st.write(f"Hi, {name}! {emoji}")
@@ -78,3 +79,5 @@ if pic:
     st.download_button(
         label="Save pic", data=pic, file_name=f"{streamlit_day}-streamlit.jpg"
     )
+
+footer()
