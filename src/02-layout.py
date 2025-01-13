@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Customizing the layout of a Streamlit app")
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns(3, border=True, vertical_alignment="center")
 
 with col1:
     st.write("Here is column 1")
@@ -16,3 +16,8 @@ with col3:
 
 with st.expander(label="Additional options"):
     st.slider(label="Number", min_value=0, max_value=10)
+
+with st.sidebar:
+    awesomeness_level = st.radio(
+        "Awesomeness level", (":thumbsup:", ":tada:", ":rocket:")
+    )
