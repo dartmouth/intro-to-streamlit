@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 
+st.logo(image="img/Dartmouth_wordmark.png", size="large")
 
 @st.cache_data
 def get_data():
     return sns.load_dataset("penguins")
-
 
 df = get_data()
 
@@ -19,7 +19,7 @@ selected_species = st.multiselect(
 subset = df[df.species.isin(selected_species)]
 
 with st.expander(label="Data"):
-    subset
+    st.data_editor(subset)
 
 st.scatter_chart(
     subset,
