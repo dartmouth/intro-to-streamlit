@@ -26,7 +26,19 @@ The repo has the following structure:
 - `img`: Images used in the notebooks
 - `src`: Python scripts illustrating the main concepts discussed in this workshop
 
-### Issues and feedback
+### Running the demo apps
+
+To run any of the provided demo apps, run the following command from the repository root:
+
+```
+streamlit run src/<name_of_demo_app>.py
+```
+
+This will open up a browser window rendering the app. For more info on running Streamlit apps, check [the official docs](https://docs.streamlit.io/develop/concepts/architecture/run-your-app).
+
+If you are using Visual Studio Code, a launch configuration for debugging is provided in `.vscode/launch.json`.
+
+## Issues and feedback
 
 If you run into any trouble working with these materials, have some questions about the content, or want to give general feedback, feel free to go through one of these channels to get in touch with us:
 
@@ -34,7 +46,7 @@ If you run into any trouble working with these materials, have some questions ab
 - [Send an email](mailto:simon.stone@dartmouth.edu)
 - [Schedule a meeting](https://calendly.com/simon-stone-dartmouth) (Dartmouth-members only)
 
-### Licensing
+## Licensing
 
 <table>
 <tbody>

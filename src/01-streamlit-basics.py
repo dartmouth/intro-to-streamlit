@@ -2,7 +2,9 @@ import streamlit as st
 
 from my_components import footer
 
+
 def say_hi(name, emoji):
+    """A function that prints a friendly message"""
     st.write(f"Hi, {name}! {emoji}")
 
 
