@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 import seaborn as sns
 
 st.logo(image="img/Dartmouth_wordmark.png", size="large")
